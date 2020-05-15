@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<!--内联>嵌入>外部引入  嵌入>外部引入的条件是 link在style前面 就近原则-->
+<head>
+    <meta charset="UTF-8">
+    <title>css3中三种引入样式优先级</title>
+    <link href="style7-8.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        span {
+            color: red;
+            font-size:20px;
+        }
+    </style>
+</head>
+
+<body>
+<p>慕课网，<span style="color:pink;font-size:100px">超酷的互联网</span>、IT技术免费学习平台，创新的网络一站式学习、实践体验；服务及时贴心，内容专业、有趣易学。专注服务互联网工程师快速成为技术高手！</p>
+</body>
+</html>
