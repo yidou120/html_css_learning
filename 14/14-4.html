@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<!--
+    1、给子元素设置flex属性,可以设置子元素相对于父元素的占比。
+
+    2、flex属性的值只能是正整数,表示占比多少。
+
+    3、给子元素设置了flex之后,其宽度属性会失效。
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>flex占比</title>
+    <style type="text/css">
+        .box {
+            height: 300px;
+            background: blue;
+            display: flex;
+        }
+
+        .box div {
+            width: 200px;
+            height: 200px;
+        }
+
+        .box1 {
+            flex: 1;
+            background: red;
+        }
+
+        .box2 {
+            flex: 3;
+            background: orange;
+        }
+
+        .box3 {
+            flex: 2;
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+<div class="box">
+    <div class="box1">flex:1</div>
+    <div class="box2">flex:3</div>
+    <div class="box3">flex:2</div>
+</div>
+</body>
+
+</html>
