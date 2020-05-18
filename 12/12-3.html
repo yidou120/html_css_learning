@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<!--内联元素在显示的时候会出现空白间距
+    这是由于编辑时候的空白字符引起的，
+    并且间距的大小受父元素font-size的影响。
+    这和css的write-space属性有关，默认指是normal
+    会将多个空白字符合并为一个空白间距
+    解决方法:
+    http://www.bubuko.com/infodetail-2979651.html?__cf_chl_jschl_tk__=0ec4635fbebe104da6925a1e5212f5a102def440-1589771124-0-AT_UdTncjNDATh_H9a7-_rIpZJYbkScuEDBLPiQaYbQIRTKF0agFm-Iu-n3z-o2EmCBYBZjizMyf4eHboFLn9dPppML9M-LFpnp1QvwlzdwbKl5khKb8f50UFbvhW8KLZL2jdGntUz_EYkawlxPKD5QunNNbcEpVeo4Aq9NVVUqwGNy8C2J7AbNgvbqEoKAdsGwaH3iW8QIXErhlsQ1QClKIyBDfKcGPTdl6A4CvVnchhnbJGSZdxsBo8ZdFBm1iKPqSq-38nhS9bM2rc5flNnk-sh5wVZVkQ3yZJyDrlwWPu7xXRYI8QvVqOvlSXGVCmA
+    1.可以使用编辑器 让内联元素靠在一起，不要有空白间距
+    2.设置父元素font-size为0px
+    3.设置元素float属性
+    4.设置margin为负数
+    5.设置word-spacing为负数
+    5.设置为块状元素
+    -->
+
+<!--内联元素都在一行，不可设置宽高-->
+<head>
+    <meta charset="UTF-8">
+    <title>行内元素标签</title>
+    <style type="text/css">
+        a,
+        strong,
+        span,
+        em {
+            background: pink;
+            /*设置a、span、em标签背景颜色都为粉色*/
+        }
+    </style>
+</head>
+
+<body>
+<a href="http://www.baidu.com">百度</a>
+<a href="http://www.imooc.com">慕课网</a>
+<span>33333</span>
+<span>44444</span><em>555555</em><strong>66666</strong>
+</body>
+
+</html>
